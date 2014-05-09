@@ -1,0 +1,17 @@
+{
+    "name": "florianv-notes",
+    "version": "1.0.0",
+    "dependencies": {
+        "bootstrap-sass": "~3.*",
+        "font-awesome": "~4.*",
+        "backbone.marionette": "~1.*",
+        "backbone.syphon": "~0.*",
+        "requirejs": "~2.*",
+        "text": "~2.*",
+        "handlebars": "~2.*",
+        "jquery.cookie": "~1.*",
+        "spin.js": "~2.*",
+        "moment": "~2.*",
+        "backbone-query-parameters": "~0.*"
+    }
+}

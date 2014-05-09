@@ -1,0 +1,29 @@
+/*
+ * This file is part of the Notes application.
+ *
+ * (c) Florian Voutzinos <florian@voutzinos.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+.login {
+  max-width: 330px;
+  padding: 10px;
+  margin: 0 auto;
+
+  .input-group {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .password-group {
+    margin-bottom: 20px;
+  }
+
+  .credentials {
+    @extend .text-muted;
+    margin-top: 10px;
+    text-align: center;
+  }
+}

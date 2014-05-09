@@ -1,0 +1,95 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: fixtures.yml }
+    - { resource: security.yml }
+
+framework:
+    translator:      { fallback: "%locale%" }
+    secret:          "%secret%"
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+    default_locale:  "%locale%"
+    trusted_hosts:   ~
+    trusted_proxies: ~
+    session:
+        handler_id:  ~
+    fragments:       ~
+    http_method_override: true
+
+# Twig
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+
+# Assetic
+assetic:
+    debug:          "%kernel.debug%"
+    use_controller: false
+    bundles:        [ ]
+    filters:
+        cssrewrite: ~
+
+# Doctrine
+doctrine:
+    dbal:
+        driver:   "%database_driver%"
+        host:     "%database_host%"
+        port:     "%database_port%"
+        dbname:   "%database_name%"
+        user:     "%database_user%"
+        password: "%database_password%"
+        charset:  UTF8
+    orm:
+        auto_generate_proxy_classes: "%kernel.debug%"
+        auto_mapping: true
+
+# Swiftmailer
+swiftmailer:
+    transport: "%mailer_transport%"
+    host:      "%mailer_host%"
+    username:  "%mailer_user%"
+    password:  "%mailer_password%"
+    spool:     { type: memory }
+
+# User
+fos_user:
+    db_driver: orm
+    firewall_name: none
+    user_class: Notes\Bundle\ApiBundle\Entity\User
+
+# Framework Extra
+sensio_framework_extra:
+    view: { annotations: false }
+    request: { converters: true }
+
+# Rest
+fos_rest:
+    body_listener: true
+    view:
+        view_response_listener: force
+
+# Api Doc
+nelmio_api_doc: ~
+
+# DI extra
+jms_di_extra:
+    locations:
+        all_bundles: false
+        bundles: [NotesApiBundle]
+        directories: ["%kernel.root_dir%/../src"]
+
+# Oauth
+fos_oauth_server:
+    db_driver: orm
+    client_class:        Notes\Bundle\ApiBundle\Entity\Client
+    access_token_class:  Notes\Bundle\ApiBundle\Entity\AccessToken
+    refresh_token_class: Notes\Bundle\ApiBundle\Entity\RefreshToken
+    auth_code_class:     Notes\Bundle\ApiBundle\Entity\AuthCode
+    service:
+        user_provider: fos_user.user_manager

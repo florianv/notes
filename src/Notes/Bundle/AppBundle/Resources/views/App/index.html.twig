@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Notes</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link href="{{ asset('bundles/notesapp/css/main.css') }}" rel="stylesheet"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    <link rel="icon" href="{{ asset('favicon.ico') }}"/>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="wrapper">
+    <div id="header-region"></div>
+    <div id="main-region"></div>
+    <footer></footer>
+</div>
+
+{% block javascripts %}
+    <script data-main="{{ asset('bundles/notesapp/js/main.js') }}" src="{{ asset('bundles/notesapp/js/vendor/require.js') }}"></script>
+    <script>
+        define('config', function () {
+            return {
+                tokenUrl: '{{ tokenUrl }}',
+                clientId: '{{ clientId }}',
+                clientSecret: '{{ clientSecret }}',
+                baseUrl: '{{ app.request.getBaseURL() }}'
+            }
+        });
+    </script>
+{% endblock %}
+</body>
+</html>

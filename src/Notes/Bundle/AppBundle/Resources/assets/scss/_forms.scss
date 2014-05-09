@@ -1,0 +1,44 @@
+/*
+ * This file is part of the Notes application.
+ *
+ * (c) Florian Voutzinos <florian@voutzinos.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+.input-group-addon {
+  width: 60px;
+  font-size: $font-size-large;
+  background: $color-clouds;
+  color: $color-concrete;
+  border-color: $input-border;
+}
+
+.form-control {
+  height: auto;
+  padding: 10px;
+  line-height: 24px;
+  font-size: 17px;
+  box-shadow: none;
+  border: $border-size-base solid $input-border;
+
+  &:focus {
+    border: $border-size-base solid $color-emerald;
+    box-shadow: none;
+  }
+}
+
+.input-error {
+  border: $border-size-base solid $brand-danger;
+}
+
+.input-error-text {
+  color: $brand-danger;
+  margin-top: 5px;
+  padding-left: 0;
+
+  li {
+    list-style: none;
+  }
+}

@@ -1,0 +1,10 @@
+# Parameters used in the data fixtures to initialize the application
+parameters:
+   oauth.random_id: 2bzyjhi21ny88c4ksg44wwk40c00ck4g800w4o8c0okkgks8ws
+   oauth.secret:    2kdceqmaah4wcgw00kc4s88cckso04csk8cok4k00kwgc00k4g
+
+   user_one.username: florian
+   user_one.password: flo123
+
+   user_two.username: david
+   user_two.password: dav123

@@ -1,0 +1,17 @@
+app/config/deploy.rb
+Capfile
+/web/bundles/
+/app/bootstrap.php.cache
+/app/cache/*
+/app/config/parameters.yml
+/app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+/build/
+/vendor/
+/bin/
+/composer.phar
+src/Notes/Bundle/AppBundle/Resources/assets/components
+node_modules
+.sass-cache
+composer.lock

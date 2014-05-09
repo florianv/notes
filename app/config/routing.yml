@@ -1,0 +1,21 @@
+# App routes
+notes_app:
+    resource: "@NotesAppBundle/Controller/AppController.php"
+    prefix:   /
+    type:     annotation
+
+notes_rest_note:
+    resource: "@NotesApiBundle/Controller/NoteController.php"
+    prefix:   /api
+    type:     annotation
+
+# OAuth
+notes_oauth_token:
+    path:  /token
+    defaults: { _controller: fos_oauth_server.controller.token:tokenAction }
+    requirements:
+        _method:  POST
+
+# JS Routing
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"

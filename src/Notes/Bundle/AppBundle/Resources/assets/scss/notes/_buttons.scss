@@ -1,0 +1,31 @@
+/*
+ * This file is part of the Notes application.
+ *
+ * (c) Florian Voutzinos <florian@voutzinos.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+.btn-delete-note {
+  @extend .close;
+  font-size: 24px;
+  color: $brand-danger;
+  opacity: 1;
+  text-shadow: none;
+
+  &:hover, &:focus {
+    color: lighten($brand-danger, 10%);
+    opacity: 1;
+  }
+}
+
+.btn-add-note, .btn-logout {
+  margin-top: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.btn-add-note {
+  margin-right: 20px;
+}

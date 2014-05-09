@@ -1,0 +1,41 @@
+include:
+    - users.yml
+
+Notes\Bundle\ApiBundle\Entity\Note:
+    note_1:
+        title:        Note 1
+        content:      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        user:         @florian
+        createdDate:  2014-01-01 15:00:00
+        modifiedDate: 2014-01-01 15:00:00
+    note_2:
+        title:        Note 2
+        content:      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        user:         @florian
+        createdDate:  2014-03-01 15:00:00
+        modifiedDate: 2014-03-01 15:00:00
+    note_3:
+        title:        Issue
+        content:      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        user:         @florian
+        createdDate:  2014-02-01 15:00:00
+        modifiedDate: 2014-02-01 15:00:00
+    note_4:
+        title:        Note 1
+        content:      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        user:         @david
+        createdDate:  2014-01-01 15:00:00
+        modifiedDate: 2014-01-01 15:00:00
+    note_5:
+        title:        Issue 1
+        content:      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        user:         @david
+        createdDate:  2014-03-01 15:00:00
+        modifiedDate: 2014-03-01 15:00:00
+    note_6:
+        title:        Issue 2
+        content:      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        user:         @david
+        user:         @florian
+        createdDate:  2014-02-01 15:00:00
+        modifiedDate: 2014-02-01 15:00:00

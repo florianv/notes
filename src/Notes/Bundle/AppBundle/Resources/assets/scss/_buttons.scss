@@ -1,0 +1,61 @@
+/*
+ * This file is part of the Notes application.
+ *
+ * (c) Florian Voutzinos <florian@voutzinos.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+.btn {
+  &, &:hover, &:active, &:focus {
+    color: $color-white;
+    border: 0;
+  }
+
+  &:hover {
+    @include transition(all 0.3s ease-in-out);
+  }
+
+  &:active, &:focus {
+    box-shadow: none;
+  }
+}
+
+@mixin make-btn($type) {
+  .btn-#{$type} {
+    &:hover {
+      background: lighten(get-btn-bg($type), 10%);
+    }
+
+    &:active, &:focus {
+      background: darken(get-btn-bg($type), 10%);
+    }
+  }
+}
+
+@function get-btn-bg($type) {
+  @if $type == "default" {
+    @return $btn-default-bg;
+  }
+
+  @if $type == "primary" {
+    @return $btn-primary-bg;
+  }
+
+  @if $type == "danger" {
+    @return $btn-danger-bg;
+  }
+
+  @if $type == "info" {
+    @return $btn-info-bg;
+  }
+
+  @if $type == "success" {
+    @return $btn-success-bg;
+  }
+}
+
+@each $type in default, primary, danger, info, success {
+  @include make-btn($type);
+}

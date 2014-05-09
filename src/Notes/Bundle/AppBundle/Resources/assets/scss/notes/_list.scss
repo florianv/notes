@@ -1,0 +1,36 @@
+/*
+ * This file is part of the Notes application.
+ *
+ * (c) Florian Voutzinos <florian@voutzinos.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+h4 {
+  margin: 0 0 10px 0;
+}
+
+.delete-note-wrapper {
+  padding-right: 0;
+}
+
+.badges-list {
+  line-height: 32px;
+  margin-bottom: 10px;
+
+  span {
+    margin-right: 2px;
+  }
+}
+
+.modified-date {
+  color: $color-concrete;
+  margin-bottom: 0;
+}
+
+.list-group-item {
+  &:hover {
+    @include transition(all 0.3s ease-in-out);
+  }
+}

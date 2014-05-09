@@ -1,0 +1,38 @@
+<form>
+
+    {{#if created_date}}
+    <div class="row note-dates-row">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-12">
+                    <span class="pull-left"><i class="fa fa-clock-o"> </i> Created: {{formatDate created_date}}</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <span class="pull-left"><i class="fa fa-clock-o"> </i> Modified: {{formatDate modified_date}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="form-group">
+        <label for="note-title" class="sr-only">Title</label>
+        <input id="note-title" name="title" type="text" class="form-control" placeholder="Title" value="{{title}}"/>
+    </div>
+
+    <div class="form-group">
+        <label for="note-text" class="sr-only">Note</label>
+        <textarea id="note-text" name="content" class="form-control" rows="10" placeholder="Note">{{content}}</textarea>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <button type="button" id="btn-close" class="btn btn-default btn-lg pull-left">Close</button>
+            <button type="button" id="btn-save" class="btn btn-success btn-lg pull-right"><i class="fa fa-check"> </i> Save</button>
+        </div>
+    </div>
+
+</form>

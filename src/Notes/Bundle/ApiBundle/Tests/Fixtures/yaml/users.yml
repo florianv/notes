@@ -1,0 +1,16 @@
+Notes\Bundle\ApiBundle\Entity\User:
+    john:
+        username:      john
+        email:         john@test.org
+        plainPassword: john
+        enabled:       true
+    florian:
+        username:      florian
+        email:         florian@test.org
+        plainPassword: florian
+        enabled:       true
+    david:
+        username:      david
+        email:         david@test.org
+        plainPassword: david
+        enabled:       true

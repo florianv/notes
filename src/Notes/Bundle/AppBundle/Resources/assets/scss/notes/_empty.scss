@@ -1,0 +1,26 @@
+/*
+ * This file is part of the Notes application.
+ *
+ * (c) Florian Voutzinos <florian@voutzinos.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+.empty-notes {
+  text-align: center;
+  font-size: 17px;
+  background: $color-clouds;
+  padding: 20px;
+  border-radius: $border-radius-base;
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.empty-edit-icon {
+  color: $color-silver;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
