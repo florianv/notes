@@ -1,5 +1,3 @@
-app/config/deploy.rb
-Capfile
 /web/bundles/
 /app/bootstrap.php.cache
 /app/cache/*
@@ -15,3 +13,5 @@ src/Notes/Bundle/AppBundle/Resources/assets/components
 node_modules
 .sass-cache
 composer.lock
+app/config/deploy.rb
+Capfile

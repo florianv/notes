@@ -10,7 +10,6 @@
     },
     "require": {
         "php": ">=5.3.3",
-        "ext-apc": "*",
         "symfony/symfony": "~2.4",
         "doctrine/orm": "~2.4",
         "doctrine/doctrine-bundle": "~1.2",

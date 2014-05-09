@@ -1,5 +1,7 @@
 # Notes
 
+[![Build Status](https://travis-ci.org/florianv/notes.svg?branch=master)](https://travis-ci.org/florianv/notes)
+
 The backend is a REST API secured by OAuth2 (Resource Owner Password Credentials Grant) based on [Symfony2](http://symfony.com)
 and the frontend is a [Marionette](http://marionettejs.com) MVC application in CoffeeScript.
 
@@ -11,6 +13,9 @@ and the frontend is a [Marionette](http://marionettejs.com) MVC application in C
 - [NPM](https://www.npmjs.org)
 - [Bower](http://bower.io)
 - [Grunt](http://gruntjs.com)
+
+You will need the APC extension to run the application in the prod environment
+or change the [config](https://github.com/florianv/notes/blob/master/app/config/config_prod.yml#L4-L12).
 
 ### Steps
 
