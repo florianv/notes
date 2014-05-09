@@ -21,7 +21,7 @@
         "sensio/framework-extra-bundle": "~3.0",
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-        "friendsofsymfony/rest-bundle": "dev-master",
+        "friendsofsymfony/rest-bundle": "~1.3",
         "hautelook/alice-bundle": "~0.1",
         "friendsofsymfony/user-bundle": "~1.2",
         "jms/serializer-bundle": "~0.13",
