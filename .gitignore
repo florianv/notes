@@ -12,6 +12,5 @@
 src/Notes/Bundle/AppBundle/Resources/assets/components
 node_modules
 .sass-cache
-composer.lock
 app/config/deploy.rb
 Capfile
