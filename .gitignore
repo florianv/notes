@@ -12,5 +12,4 @@
 src/Notes/Bundle/AppBundle/Resources/assets/components
 node_modules
 .sass-cache
-app/config/deploy.rb
-Capfile
+/app/config/deploy.rb

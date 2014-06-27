@@ -1,0 +1,29 @@
+set :domain,              ""
+set :user,                ""
+
+set :application,         "notes"
+set :deploy_to,           "/var/www/#{application}"
+
+set :app_path,            "app"
+set :shared_files,        ["app/config/parameters.yml"]
+set :shared_children,     [app_path + "/logs", web_path + "/uploads", "vendor"]
+
+set :writable_dirs,       ["app/cache", "app/logs"]
+set :webserver_user,      "www-data"
+set :permission_method,   :acl
+set :use_set_permissions, true
+set :use_sudo,            false
+
+set :repository,          "https://github.com/florianv/notes"
+set :scm,                 :git
+
+set :keep_releases,       3
+set :use_composer,        true
+set :model_manager,       "doctrine"
+
+role :web,        domain
+role :app,        domain, :primary => true
+
+ssh_options[:forward_agent] = true
+
+logger.level = Logger::MAX_LEVEL
