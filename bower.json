@@ -1,6 +1,7 @@
 {
     "name": "florianv-notes",
     "version": "1.0.0",
+    "private": true,
     "dependencies": {
         "bootstrap-sass": "~3.*",
         "font-awesome": "~4.*",
