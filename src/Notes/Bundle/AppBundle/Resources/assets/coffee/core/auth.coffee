@@ -109,7 +109,6 @@ define ['jquery', 'jquery.cookie'], ($) ->
     _fetchPost: (postData, success, error) ->
       $.ajax
         url: @tokenUrl
-        async: false
         type: 'POST'
         headers:
           Accept: 'application/json'
