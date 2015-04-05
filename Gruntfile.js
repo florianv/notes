@@ -81,11 +81,11 @@ module.exports = function (grunt) {
                         dest: '<%= jsDir %>/vendor/handlebars.js'
                     },
                     {
-                        src: ['<%= componentsDir %>/backbone.syphon/lib/amd/backbone.syphon.js'],
+                        src: ['<%= componentsDir %>/backbone.syphon/lib/backbone.syphon.js'],
                         dest: '<%= jsDir %>/vendor/syphon.js'
                     },
                     {
-                        src: ['<%= componentsDir %>/bootstrap-sass/dist/js/bootstrap.js'],
+                        src: ['<%= componentsDir %>/bootstrap-sass/assets/javascripts/bootstrap.js'],
                         dest: '<%= jsDir %>/vendor/bootstrap.js'
                     },
                     {
