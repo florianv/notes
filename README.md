@@ -1,5 +1,7 @@
 # Notes
 
+![Screenshot](screenshot.png)
+
 [![Build Status](https://travis-ci.org/florianv/notes.svg?branch=master)](https://travis-ci.org/florianv/notes)
 
 The backend is a REST API secured by OAuth2 (Resource Owner Password Credentials Grant) based on [Symfony2](http://symfony.com)
